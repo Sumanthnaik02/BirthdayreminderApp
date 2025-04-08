@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Birthday Reminder App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🎉 Birthday Reminder</h1>
+
+<!-- Section to add a new birthday -->
+<section>
+    <h2>Add Birthday</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="date" id="date">
+    <button onclick="addBirthday()">Add</button>
+</section>
+
+<!-- Section to display all birthdays -->
+<section>
+    <h2>All Birthdays</h2>
+    <button onclick="fetchBirthdays()">Refresh</button>
+    <div id="birthdayList"></div> <!-- Updated to div for custom rows -->
+</section>
+
+<!-- Section for today's birthdays -->
+<section>
+    <h2>Today's Birthdays</h2>
+    <button onclick="fetchTodayBirthdays()">Show</button>
+    <ul id="todayList"></ul>
+</section>
+
+<!-- Section for this month's birthdays -->
+<section>
+    <h2>This Month's Birthdays</h2>
+    <button onclick="fetchMonthBirthdays()">Show</button>
+    <ul id="monthList"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
